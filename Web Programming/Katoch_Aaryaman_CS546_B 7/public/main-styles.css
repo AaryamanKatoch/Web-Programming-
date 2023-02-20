@@ -1,0 +1,152 @@
+/*This file should have CSS rulesets */
+@keyframes a1 {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+main{
+    margin:10cm;
+    max-height: fit-content;
+    max-width: fit-content;
+    animation-name: a1;
+  animation-duration: 1s;
+  
+}
+
+body {
+    background-color: rgb(203, 247, 6);
+    animation: blinkingBackground 0.1s infinite;
+    
+	}
+	@keyframes blinkingBackground{
+		10%		{ background-color: #fb4407;}
+		20%		{ background-color: #6399eb;}
+		50%		{ background-color: #0ecef9;}
+		80%		{ background-color: #cbf60c;}
+		100%	        { background-color: #fa73cd;}
+     
+	}
+
+
+h1{animation: blinker 0.5s linear infinite;
+    color:rgb(253, 7, 224);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+h2{animation: blinker 0.5s linear infinite;
+    color:rgb(21, 248, 39);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(243, 8, 180);
+    border:0ex;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: rgb(231, 208, 7);
+    cursor: grabbing;
+}
+
+button:hover{
+    background-color: indianred;
+
+}
+
+button::before{
+    color: #000;
+}
+
+p, label {
+    color: #9d10fb;
+    font-size: 24px;
+}
+
+input {
+    background-color: aqua;
+    color: chocolate;
+}
+
+p {
+    background-color: rgb(155, 242, 241);
+    animation: blinkingBackground1 0.01s infinite;
+    
+	}
+	@keyframes blinkingBackground1{
+		10%		{ background-color: #52f5d1;}
+		20%		{ background-color: #c5ef08;}
+		50%		{ background-color: #ef9f0a;}
+		70%		{ background-color: #78256e;}
+		90%	        { background-color: #267d26;}
+	}
+
+
+button::placeholder {
+    color: rgb(238, 255, 6);
+}
+
+li {
+    font-family: 'Times New Roman', Times, serif;
+    color: darkgoldenrod;
+}
+a:active {
+    color: #29ee0b;
+}
+a:link {
+    color: #0fec4e;
+}
+a:visited {
+    color: #5b2609;
+}
+a:hover {
+    color: #16a0ea;
+}
+a.new {
+    color: #f6a00c;
+    font-family: Georgia, serif;
+    
+}
+dd {
+    color: #4809f3;
+    font-family: 'Times New Roman', Times, serif;
+}
+dt {
+    color: #ed84f2;
+    font-family: Georgia, serif;
+}
+.not-found {
+    color: #f82509;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+title{
+    color :#0fec4e
+}
+
+form {
+    color: #4809f3;
+    cursor: grab;
+}
+
+
+	main{
+		
+		animation: blinkingBackground 0.01s infinite;
+	}
+	@keyframes blinkingBackground{
+		10%		{ background-color: #10c018;}
+		20%		{ background-color: #1056c0;}
+		50%		{ background-color: #ef0a1a;}
+		70%		{ background-color: #254878;}
+		100%	        { background-color: #04a1d5;}
+	}
+   
+	@keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }

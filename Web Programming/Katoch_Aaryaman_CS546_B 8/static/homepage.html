@@ -1,0 +1,45 @@
+<!-- 
+Your page should have a few basic user interface elements:
+-A header tag, with an h1 naming your site, with a title for your page
+-A footer with your name, student ID, and any other info about yourself you wish to include
+-A single unordered list with an id of results. All the arrays you have checked so far (until you refresh the page) will appear in this list as list items. Each item in the list will alternate the text colors starting with green, then red, then green, then red etc.
+
+Your page will have a form with the following:
+-A label with a for attribute referencing your input
+-A input with a name and type of text
+-A button to submit the form
+ -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Array Sort</title>
+  <link rel="stylesheet" href="/public/css/main.css">
+</head>
+<body>
+  <header>
+    <h1>Array Sort</h1>
+  </header>
+  <form method="POST" id="formid">
+       <label for ="inputid">Input Label</label>
+        <input type="text" id="inputid" name="text">
+        <button type="submit">Submit</button>
+    
+</form>
+  <div class="hidden" id="error-container">
+    <div class="alert alert-danger text-goes-here">
+    </div>
+  </div>
+  <div class="hidden" id="result-container">
+    <div class="alert alert-success text-goes-here">
+      <ul id="results"></ul>
+    </div>
+  </div> 
+    
+  <script src="/public/js/main.js"></script>
+  <footer class="footer">
+    <p>Aaryaman Tej Pratap Katoch 20011367</p>
+  </footer>
+</body>
+
+</html>

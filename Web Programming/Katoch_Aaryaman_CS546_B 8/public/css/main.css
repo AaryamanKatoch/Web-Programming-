@@ -1,0 +1,98 @@
+/*
+You will style your page using at least 10 CSS selectors for general CSS styling. You will place the CSS in its own file. You must style the is-green class to make text have a color of #00E676 and is-red class to make text have a color of #FF3D00.
+*/
+
+.is-red{
+    color:#FF3D00
+ 
+}
+.is-green{
+    color:#00E676 
+}
+body{animation: blinkingBackground 0.1s infinite;
+    background:azure;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18pt;
+    
+}
+.hidden{
+    display: none;
+}
+
+
+main{
+    max-width: fit-content;
+    max-height: fit-content;
+}
+header{
+    color: darkmagenta;
+    text-align: center;
+    text-decoration: wavy;
+}
+footer{
+    color:deeppink;
+    text-align: center;
+    text-decoration: wavy;
+}
+form{
+    color: blanchedalmond;
+    text-align: center;
+}
+input{
+    lighting-color: coral;
+    
+}
+button{animation: blinker 1s linear infinite;
+    background: #e08484;
+    border: 1px solid #590404;
+    color: #757575;
+    font-weight: bold;
+}
+button:hover{
+    box-shadow: 0 1px 1px rgba(17, 234, 126, 0.1);
+    color: rgb(209, 243, 12);
+}
+h1{
+    color: rgb(243, 154, 12);
+    text-align: center;
+}
+.form-error-container{
+    background-color: darkred;
+    text-emphasis-color: hotpink;
+}
+label{
+    color:rgb(243, 154, 12)
+
+}
+div{
+    
+    color:rgb(202, 12, 5);
+  
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: lighter;
+    font-style: normal;
+    
+    text-emphasis-color: red;
+}
+#error-container{
+    animation: blinker 1s linear infinite;
+    background-color: #eba2a7;
+    color: #FF3D00;
+
+}
+#result-container{
+    background-color:rgb(255, 255, 255);
+}
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes blinkingBackground{
+    10%		{ background-color: #90e895;}
+    20%		{ background-color: #a6c3ee;}
+    50%		{ background-color: #eba2a7;}
+    70%		{ background-color: #96bbef;}
+    100%	        { background-color: #91dbf3;}
+}

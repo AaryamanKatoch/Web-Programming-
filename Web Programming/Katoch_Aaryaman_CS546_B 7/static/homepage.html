@@ -1,0 +1,35 @@
+<!-- 
+This page will be shown when the following route is hit: GET http://localhost:3000/
+This page will be a valid HTML document. 
+The title of the document should be "People Finder". You should have the title set as the <title> element of the HTML document and as an h1 in your document.
+Your page should reference a CSS file, /public/main-styles.css; with at least 10 rulesets that apply to this page; these 10 rules can also apply to elements across all of your pages, or be unique to this page.
+You should have a main element, and inside of the main element have a p element with a brief (2-3 sentence description) of what your website does.
+Also inside the main element, you will have a form; this form will POST to /searchpeople. This form will have an input and a label; the label should properly reference the same id as the input. You should also have a button with a type of submit that submits the form. The input in your form should have a name of searchPersonName.
+ -->
+ <!doctype html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="utf-8">
+     <meta http-equiv="x-ua-compatible" content="ie=edge">
+     <title>People Finder</title>
+     <meta name="description" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/public/main-styles.css">
+     
+ </head>
+ <body>
+     <main>
+         <h1>People Finder</h1>
+         <p>This website searches for people based on id or name provided by the user.It has three pages he main page of this application will provide a search form to start a search on the dataset,this page will search through the people.json dataset and return up to 20 matching results (Sorted by ID), where either the firstName or lastName contains the provided request form param,this page will show all the details of the person with the id matching the provided URL param, id</p>
+         <form action = "/searchpeople" method="POST">
+            <label for="lookingfor"></label>
+            <input id="lookingfor" name="searchPersonName" type="text" placeholder="person name">
+            
+            <button type="submit">Search</button>
+         </form>
+
+     </main>
+ </body>
+  
+ </html>
